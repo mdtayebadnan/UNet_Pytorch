@@ -18,7 +18,7 @@ def dice_score_ignore_bg(y_true, y_pred, num_classes):
             dice = 0
         else:
             dice = 2 * intersection / denominator
-
+            
         dices.append(dice)
         weights.append(np.sum(true_cls))
         
