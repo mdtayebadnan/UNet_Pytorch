@@ -22,8 +22,6 @@ class CarvanaDataset(Dataset):
             img = augmentation["image"]
             mask = augmentation["mask"]
             mask = torch.unsqueeze(mask,0)
-            #transformations = self.transform(image=img, mask=mask)
-            #img = transformations["image"]
-            #mask = transformations["mask"]
+            
             
         return img,mask
